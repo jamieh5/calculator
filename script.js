@@ -29,7 +29,34 @@ function buttonFunction(button, num) {
         display.innerHTML = displayStr;
     })
 }
-
+// Function for the other buttons
+clearBtn.addEventListener("click", function() {
+    displayStr = "";
+    display.innerHTML = displayStr;
+});
+divideBtn.addEventListener("click", function() {
+    displayStr += "/";
+    display.innerHTML = displayStr;
+});
+multiplyBtn.addEventListener("click", function() {
+    displayStr += "* ";
+    display.innerHTML = displayStr;
+});
+minusBtn.addEventListener("click", function() {
+    displayStr += "-";
+    display.innerHTML = displayStr;
+});
+dotBtn.addEventListener("click", function() {
+    displayStr += ".";
+    display.innerHTML = displayStr;
+});
+plusBtn.addEventListener("click", function() {
+    displayStr += "+";
+    display.innerHTML = display;
+});
+equalsBtn.addEventListener("click", function() {
+    display.innerHTML = eval(displayStr);
+});
 // Calling the function on the number buttons
 buttonFunction(btnZero, "0");
 buttonFunction(btnOne, "1");
