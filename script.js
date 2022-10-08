@@ -1,7 +1,7 @@
 // Query Selector for number buttons
 const btnZero = document.querySelector(".btn-zero");
 const btnOne = document.querySelector(".btn-one");
-const btnTwo = docuemnt.querySelector(".btn-two");
+const btnTwo = document.querySelector(".btn-two");
 const btnThree = document.querySelector(".btn-three");
 const btnFour = document.querySelector(".btn-four");
 const btnFive = document.querySelector(".btn-five");
@@ -18,3 +18,24 @@ const minusBtn = document.querySelector(".btn-minus");
 const dotBtn = document.querySelector(".btn-dot");
 const equalsBtn = document.querySelector(".btn-equals");
 const plusBtn = document.querySelector(".btn-plus");
+
+// Display String
+const display = document.querySelector(".display");
+let displayStr = "";
+// Function for the numbers;
+function buttonFunction(button, num) {
+    button.addEventListener("click", function() {
+        displayStr += num;
+        display.innerHTML = displayStr;
+    })
+}
+buttonFunction(btnZero, "0");
+buttonFunction(btnOne, "1");
+buttonFunction(btnTwo, "2");
+buttonFunction(btnThree, "3");
+buttonFunction(btnFour, "4");
+buttonFunction(btnFive, "5");
+buttonFunction(btnSix, "6");
+buttonFunction(btnSeven, "7");
+buttonFunction(btnEight, "8");
+buttonFunction(btnNine, "9");
