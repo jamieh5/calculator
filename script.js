@@ -29,6 +29,8 @@ function buttonFunction(button, num) {
         display.innerHTML = displayStr;
     })
 }
+
+// Calling the function on the number buttons
 buttonFunction(btnZero, "0");
 buttonFunction(btnOne, "1");
 buttonFunction(btnTwo, "2");

@@ -1,21 +1,25 @@
+body {
+    background-color: rgb(19,20,23);
+}
 .container {
     height: 500px;
     width: 30%;
-    border: 1px solid red;
+    border: 1px solid gray;
     margin: auto;
     margin-top: 60px;
 }
 .display {
     height: 50px;
     width: 75%;
-    border: 1px solid yellow;
+    background-color: white;
 }
 .btn {
-    background-color: none;
     width: 20%;
     height: 50px;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    border: solid 1px green;
+    background-color: green;
+    color: white;
+    border-radius: 10%;
 }
