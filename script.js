@@ -39,7 +39,7 @@ divideBtn.addEventListener("click", function() {
     display.innerHTML = displayStr;
 });
 multiplyBtn.addEventListener("click", function() {
-    displayStr += "* ";
+    displayStr += "*";
     display.innerHTML = displayStr;
 });
 minusBtn.addEventListener("click", function() {
